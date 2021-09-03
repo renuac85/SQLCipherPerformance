@@ -25,9 +25,10 @@ import net.sqlcipher.database.SQLiteDatabaseHook
 import net.sqlcipher.database.SupportFactory
 
 
-@Database(entities = [Person::class], version = 1)
+@Database(entities = [Person::class, Mail::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun personDao(): PersonDao
+    abstract fun mailDao(): MailDao
 
     companion object {
         @Volatile

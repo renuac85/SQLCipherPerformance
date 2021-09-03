@@ -52,9 +52,6 @@ class MainActivity : AppCompatActivity() {
         binding.selectsIndexedButton.setOnClickListener { _ ->
             viewModel.onSelectIndexedClicked()
         }
-        binding.selectsNoindexButton.setOnClickListener { _ ->
-            viewModel.onSelectNoIndexClicked()
-        }
 
         binding.cancelButton.setOnClickListener {
             viewModel.onCancelClicked()

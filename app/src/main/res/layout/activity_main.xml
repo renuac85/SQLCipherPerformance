@@ -110,16 +110,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/inserts_button" />
 
             <Button
-                android:id="@+id/selects_noindex_button"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@{ String.format(@string/select_x_time_not_indexed, count)}"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/selects_indexed_button" />
-
-            <Button
                 android:id="@+id/cancel_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -129,7 +119,7 @@
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/selects_noindex_button" />
+                app:layout_constraintTop_toBottomOf="@+id/selects_indexed_button" />
 
             <TextView
                 android:id="@+id/results"
@@ -148,7 +138,7 @@
                 android:id="@+id/controllers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:constraint_referenced_ids="inserts_button, transaction_count, selects_indexed_button, selects_noindex_button, security_radio_group" />
+                app:constraint_referenced_ids="inserts_button, transaction_count, selects_indexed_button, security_radio_group" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
